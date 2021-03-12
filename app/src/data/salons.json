@@ -1,0 +1,34 @@
+{
+    "salons": [
+        {
+            "id": 1,
+            "name": "salon 1",
+            "rating": 4,
+            "votes": 50,
+            "price": 200,
+            "address": "salon 1 address",
+            "topLeftNumber": 12.00,
+            "duration": 30
+        },
+        {
+            "id": 2,
+            "name": "salon 2",
+            "rating": 5,
+            "votes": 120,
+            "price": 250,
+            "address": "salon 2 address",
+            "topLeftNumber": 12.00,
+            "duration": 30
+        },
+        {
+            "id": 3,
+            "name": "salon 3",
+            "rating": 3,
+            "votes": 40,
+            "price": 600,
+            "address": "salon 3 address",
+            "topLeftNumber": 12.00,
+            "duration": 30
+        }
+    ]
+}
