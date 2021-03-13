@@ -29,6 +29,16 @@
             "address": "salon 3 address",
             "topLeftNumber": 12.00,
             "duration": 30
+        },
+        {
+            "id": 4,
+            "name": "salon 4",
+            "rating": 2,
+            "votes": 140,
+            "price": 320,
+            "address": "salon 4 address",
+            "topLeftNumber": 11.00,
+            "duration": 14
         }
     ]
 }
