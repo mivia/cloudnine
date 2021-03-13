@@ -5,11 +5,9 @@ import { Theme } from '@material-ui/core/styles/createMuiTheme';
 import {
   List,
   ListItem,
-  ListItemText,
   Grid,
   Divider,
   FormControl,
-  InputLabel,
   Select,
   MenuItem,
   Box,
@@ -17,10 +15,8 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Button,
   useMediaQuery,
 } from '@material-ui/core';
-import Rating from '@material-ui/lab/Rating';
 
 import { Link } from 'react-router-dom';
 
@@ -30,10 +26,9 @@ import FilterIcon from '../../assets/icons/filter.svg';
 import RightArrowIcon from '../../assets/icons/right-arrow.svg';
 import DownArrowIcon from '../../assets/icons/down-arrow.svg';
 
-import SalonNameAndRating from '../salon/SalonNameAndRating';
+import SalonNameAndRating from '../salon/SalonNameAndRating/SalonNameAndRating';
 
 import { ISalon } from '../salon/Salon';
-import { mockComponent } from 'react-dom/test-utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   list: {
+    paddingTop: 0,
     '& hr': {
       width: 'calc(100% - 30px)',
     },

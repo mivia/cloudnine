@@ -29,7 +29,7 @@ import DownArrowIcon from '../../assets/icons/down-arrow.svg';
 import LeftArrowIcon from '../../assets/icons/left-arrow-white.svg';
 import HeartIcon from '../../assets/icons/heart.svg';
 
-import SalonNameAndRating from './SalonNameAndRating';
+import SalonNameAndRating from './SalonNameAndRating/SalonNameAndRating';
 
 const useStyles = makeStyles((theme) => ({
   imageContainer: {
@@ -125,6 +125,8 @@ const Salon: React.FC<IProps> = (props) => {
   const salonToDisplay = data.salons.find(
     (salon) => salon.id === Number(salonId),
   );
+
+  console.log('DEBUG: ', props);
 
   return (
     <>

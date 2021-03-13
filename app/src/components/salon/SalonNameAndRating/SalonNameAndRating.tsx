@@ -4,7 +4,7 @@ import Rating from '@material-ui/lab/Rating';
 
 import { Box, Typography } from '@material-ui/core';
 
-import { ISalon } from './Salon';
+import { ISalon } from '../Salon';
 
 const useStyles = makeStyles((theme) => ({
   rating: {
