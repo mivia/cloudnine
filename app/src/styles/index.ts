@@ -4,6 +4,7 @@ export const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#b69f58',
+      light: '#656565',
     },
     secondary: {
       main: '#0047CC',
@@ -14,10 +15,19 @@ export const theme = createMuiTheme({
   },
   typography: {
     fontFamily: 'Helvetica',
+    fontSize: 13,
     h5: {
       fontFamily: 'MillerBannerLight',
+      fontSize: 20,
     },
-    fontSize: 13,
+    subtitle1: {
+      color: '#656565',
+      fontSize: 15,
+    },
+    subtitle2: {
+      color: '#656565',
+      fontSize: 13,
+    },
   },
   overrides: {
     MuiCssBaseline: {

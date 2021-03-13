@@ -9,6 +9,11 @@ import { ISalon } from './Salon';
 const useStyles = makeStyles((theme) => ({
   rating: {
     color: theme.palette.primary.main,
+    fontSize: 15,
+    marginRight: theme.spacing(1),
+  },
+  heading: {
+    marginBottom: theme.spacing(1),
   },
 }));
 
@@ -23,15 +28,17 @@ const SalonNameAndRating: React.FC<IProps> = (props) => {
 
   return (
     <div className={className || ''}>
-      <Typography variant="h5">{salon.name}</Typography>
-      <Box display="flex">
+      <Typography className={classes.heading} variant="h5">
+        {salon.name}
+      </Typography>
+      <Box display="flex" alignItems="center">
         <Rating
           className={classes.rating}
           name="read-only"
           value={salon.rating}
           readOnly
         />
-        <Typography>{`(${salon.votes})`}</Typography>
+        <Typography variant="subtitle1">{`(${salon.votes})`}</Typography>
       </Box>
     </div>
   );

@@ -33,6 +33,7 @@ import DownArrowIcon from '../../assets/icons/down-arrow.svg';
 import SalonNameAndRating from '../salon/SalonNameAndRating';
 
 import { ISalon } from '../salon/Salon';
+import { mockComponent } from 'react-dom/test-utils';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,8 +41,14 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
+  list: {
+    '& hr': {
+      width: 'calc(100% - 30px)',
+    },
+  },
   select: {
     width: '100%',
+    fontSize: 15,
     borderBottom: `1px solid ${theme.palette.primary.main}`,
     '& > div': {
       height: 50,
@@ -83,6 +90,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       alignSelf: 'flex-end',
     },
+  },
+  nameAndRatingContainer: {
+    marginBottom: theme.spacing(1),
+  },
+  duration: {
+    marginTop: theme.spacing(1),
   },
 }));
 
@@ -189,7 +202,7 @@ export const Salons: React.FC = () => {
         </FormControl>
       </Grid>
       <Grid item xs={12}>
-        <List component="nav" aria-label="secondary mailbox folders">
+        <List className={classes.list} aria-label="secondary mailbox folders">
           {salons.map((salon: ISalon) => (
             <>
               <ListItem
@@ -203,12 +216,20 @@ export const Salons: React.FC = () => {
                     <Typography>{salon.topLeftNumber.toFixed(2)}</Typography>
                   </Grid>
                   <Grid item xs={6}>
-                    <SalonNameAndRating salon={salon} />
-                    <span>{salon.address}</span>
+                    <SalonNameAndRating
+                      salon={salon}
+                      className={classes.nameAndRatingContainer}
+                    />
+                    <Typography variant="subtitle1">{salon.address}</Typography>
                   </Grid>
                   <Grid item xs={3}>
                     <Typography>{`${salon.price} kr`}</Typography>
-                    <Typography>{`${salon.duration} min`}</Typography>
+                    <Typography
+                      className={classes.duration}
+                      variant="subtitle2"
+                    >
+                      {`${salon.duration} min`}
+                    </Typography>
                   </Grid>
                   <Grid
                     className={classes.detailButton}
@@ -222,7 +243,9 @@ export const Salons: React.FC = () => {
                   </Grid>
                 </Grid>
               </ListItem>
-              <Divider />
+              <Box justifyContent="center" display="flex">
+                <Divider light />
+              </Box>
             </>
           ))}
         </List>

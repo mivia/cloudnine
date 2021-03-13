@@ -13,6 +13,7 @@ import {
   Paper,
   Tabs,
   Tab,
+  Box,
 } from '@material-ui/core';
 
 import data from '../../data/salons.json';
@@ -42,6 +43,15 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     left: 15,
     bottom: 30,
+    '& h5': {
+      fontSize: 22,
+    },
+    '& h6': {
+      color: 'white',
+    },
+    '& span': {
+      fontSize: 20,
+    },
   },
   img: {
     width: '100%',
@@ -50,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     '& span': {
+      fontSize: 15,
       color: 'black',
       textTransform: 'capitalize',
     },
@@ -58,12 +69,19 @@ const useStyles = makeStyles((theme) => ({
       flex: '50%',
     },
   },
+  dividerBox: {
+    height: 25,
+    backgroundColor: '#f9f9f9',
+  },
   infoList: {
     '& li': {
       padding: '14px 15px',
     },
     '& img': {
       marginRight: theme.spacing(2),
+    },
+    '& hr': {
+      width: 'calc(100% - 30px)',
     },
   },
   arrowIcon: {
@@ -151,13 +169,16 @@ const Salon: React.FC<IProps> = (props) => {
               </Tabs>
             </Paper>
           </Grid>
+          <Box className={classes.dividerBox} />
           <Grid item>
             <List className={classes.infoList} aria-label="salon-info-list">
               <ListItem>
                 <img src={PinIcon} alt="pin-icon" />
                 <Typography>Rådmansgatan 46, 113 57 Stockholm</Typography>
               </ListItem>
-              <Divider />
+              <Box justifyContent="center" display="flex">
+                <Divider light />
+              </Box>
               <ListItem>
                 <img src={ClockIcon} alt="clock-icon" />
                 <Typography>Öppet till 19:00 idag</Typography>
@@ -167,17 +188,23 @@ const Salon: React.FC<IProps> = (props) => {
                   className={classes.arrowIcon}
                 />
               </ListItem>
-              <Divider />
+              <Box justifyContent="center" display="flex">
+                <Divider light />
+              </Box>
               <ListItem>
                 <img src={PhoneIcon} alt="phone-icon" />
                 <Typography>08-522 389 20</Typography>
               </ListItem>
-              <Divider />
+              <Box justifyContent="center" display="flex">
+                <Divider light />
+              </Box>
               <ListItem>
                 <img src={GlobeIcon} alt="globe-icon" />
                 <Typography>www.salongweb.se</Typography>
               </ListItem>
-              <Divider />
+              <Box justifyContent="center" display="flex">
+                <Divider light />
+              </Box>
               <ListItem>
                 <Typography>
                   Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra.
