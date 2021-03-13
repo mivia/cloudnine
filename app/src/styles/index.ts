@@ -13,7 +13,10 @@ export const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Helvetica',
+    h5: {
+      fontFamily: 'MillerBannerLight',
+    },
     fontSize: 13,
   },
   overrides: {

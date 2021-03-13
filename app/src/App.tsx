@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import './App.css';
 
 import { Salons } from './components/salons/Salons';
-import { Salon } from './components/salon/Salon';
+import Salon from './components/salon/Salon';
 
 const App: React.FC = () => {
   return (

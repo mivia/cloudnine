@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'MillerBannerlight';
+  src: local('MillerBannerLight'), url(./assets/fonts/MillerBannerLight.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url(./assets/fonts/Helvetica.ttf) format('ttf');
+}
