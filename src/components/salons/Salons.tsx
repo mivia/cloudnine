@@ -182,6 +182,7 @@ export const Salons: React.FC = () => {
                 alt="select"
               />
             )}
+            inputProps={{ 'data-testid': 'select-price-range' }}
             disableUnderline
             labelId="price-select"
             id="demo-simple-select"
@@ -194,22 +195,14 @@ export const Salons: React.FC = () => {
               </MenuItem>
             ))}
             <MenuItem value={SEE_ALL_OPTION}>See all</MenuItem>
-            {/* <MenuItem value="" disabled>
-              Placeholder
-            </MenuItem> */}
           </Select>
         </FormControl>
       </Grid>
       <Grid item xs={12}>
-        <List className={classes.list} aria-label="secondary mailbox folders">
+        <List className={classes.list} aria-label="salons list">
           {salons.map((salon: ISalon) => (
-            <>
-              <ListItem
-                button
-                component={Link}
-                to={`/salon/${salon.id}`}
-                key={salon.id}
-              >
+            <div key={salon.id}>
+              <ListItem button component={Link} to={`/salon/${salon.id}`}>
                 <Grid container direction={largeScreen ? 'row' : 'column'}>
                   <Grid item xs={2} className={classes.topLeftNumberContainer}>
                     <Typography>{salon.topLeftNumber.toFixed(2)}</Typography>
@@ -231,6 +224,7 @@ export const Salons: React.FC = () => {
                     </Typography>
                   </Grid>
                   <Grid
+                    container
                     className={classes.detailButton}
                     item
                     xs={1}
@@ -245,7 +239,7 @@ export const Salons: React.FC = () => {
               <Box justifyContent="center" display="flex">
                 <Divider light />
               </Box>
-            </>
+            </div>
           ))}
         </List>
       </Grid>

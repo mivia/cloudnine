@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { RouteComponentProps } from 'react-router';
 
@@ -108,11 +108,11 @@ export interface ISalon {
   duration: number;
 }
 
-interface IProps extends RouteComponentProps<any> {
+type Props = RouteComponentProps<{
   id: string;
-}
+}>;
 
-const Salon: React.FC<IProps> = (props) => {
+export const Salon: React.FC<Props> = (props) => {
   const {
     match: {
       params: { id: salonId },
@@ -219,5 +219,3 @@ const Salon: React.FC<IProps> = (props) => {
     </>
   );
 };
-
-export default withRouter(Salon);

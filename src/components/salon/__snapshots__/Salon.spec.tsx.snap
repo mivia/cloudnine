@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Salon/> renders Salon a salon when found 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
+>
+  <div
+    className="MuiGrid-root makeStyles-imageContainer-1 MuiGrid-item"
+  >
+    <img
+      className="makeStyles-img-3"
+      sizes="(max-width: 600px) 375px,  100vw  "
+      srcSet="image.png 375w,
+              image@2x.png 750w,
+              image@3x.png 1125w"
+    />
+    <div
+      className="makeStyles-nameAndRatingContainer-2"
+    >
+      <h5
+        className="MuiTypography-root makeStyles-heading-11 MuiTypography-h5"
+      >
+        salon 1
+      </h5>
+      <div
+        className="MuiBox-root MuiBox-root-12"
+      >
+        <span
+          aria-label="4 Stars"
+          className="MuiRating-root makeStyles-rating-10 MuiRating-readOnly"
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          role="img"
+        >
+          <span>
+            <span
+              className="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              className="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              className="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              className="MuiRating-icon MuiRating-iconFilled"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+          <span>
+            <span
+              className="MuiRating-icon MuiRating-iconEmpty"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            </span>
+          </span>
+        </span>
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          (50)
+        </h6>
+      </div>
+    </div>
+    <button
+      aria-label="back"
+      className="MuiButtonBase-root MuiIconButton-root makeStyles-backIcon-8"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <img
+          alt="back"
+          src="left-arrow-white.svg"
+        />
+      </span>
+    </button>
+    <button
+      aria-label="heart-icon"
+      className="MuiButtonBase-root MuiIconButton-root makeStyles-heartIcon-9"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <img
+          alt="like-icon"
+          src="heart.svg"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation1"
+    >
+      <div
+        className="MuiTabs-root makeStyles-tabs-4"
+      >
+        <div
+          className="MuiTabs-scroller MuiTabs-fixed"
+          onScroll={[Function]}
+          style={
+            Object {
+              "marginBottom": null,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            aria-label="salon tabs"
+            className="MuiTabs-flexContainer"
+            onKeyDown={[Function]}
+            role="tablist"
+          >
+            <button
+              aria-selected={true}
+              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="tab"
+              tabIndex={0}
+              type="button"
+            >
+              <span
+                className="MuiTab-wrapper"
+              >
+                Info
+              </span>
+              <span
+                className="PrivateTabIndicator-root-13 PrivateTabIndicator-colorPrimary-14 MuiTabs-indicator"
+                style={Object {}}
+              />
+            </button>
+            <button
+              aria-selected={false}
+              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-disabled Mui-disabled"
+              disabled={true}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="MuiTab-wrapper"
+              >
+                Schema
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-17 makeStyles-dividerBox-5"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <ul
+      aria-label="salon-info-list"
+      className="MuiList-root makeStyles-infoList-6 MuiList-padding"
+    >
+      <li
+        className="MuiListItem-root MuiListItem-gutters"
+        disabled={false}
+      >
+        <img
+          alt="pin-icon"
+          src="pin.svg"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Rådmansgatan 46, 113 57 Stockholm
+        </p>
+      </li>
+      <div
+        className="MuiBox-root MuiBox-root-18"
+      >
+        <hr
+          className="MuiDivider-root MuiDivider-light"
+        />
+      </div>
+      <li
+        className="MuiListItem-root MuiListItem-gutters"
+        disabled={false}
+      >
+        <img
+          alt="clock-icon"
+          src="clock.svg"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Öppet till 19:00 idag
+        </p>
+        <img
+          alt="down-arrow-icon"
+          className="makeStyles-arrowIcon-7"
+          src="down-arrow.svg"
+        />
+      </li>
+      <div
+        className="MuiBox-root MuiBox-root-19"
+      >
+        <hr
+          className="MuiDivider-root MuiDivider-light"
+        />
+      </div>
+      <li
+        className="MuiListItem-root MuiListItem-gutters"
+        disabled={false}
+      >
+        <img
+          alt="phone-icon"
+          src="phone.svg"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          08-522 389 20
+        </p>
+      </li>
+      <div
+        className="MuiBox-root MuiBox-root-20"
+      >
+        <hr
+          className="MuiDivider-root MuiDivider-light"
+        />
+      </div>
+      <li
+        className="MuiListItem-root MuiListItem-gutters"
+        disabled={false}
+      >
+        <img
+          alt="globe-icon"
+          src="globe.svg"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          www.salongweb.se
+        </p>
+      </li>
+      <div
+        className="MuiBox-root MuiBox-root-21"
+      >
+        <hr
+          className="MuiDivider-root MuiDivider-light"
+        />
+      </div>
+      <li
+        className="MuiListItem-root MuiListItem-gutters"
+        disabled={false}
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet.
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<Salon/> renders nothing when a salon is not found 1`] = `null`;

@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import { Salons } from './components/salons/Salons';
-import Salon from './components/salon/Salon';
+import Salon from './components/salon/container';
 
 const App: React.FC = () => {
   return (
