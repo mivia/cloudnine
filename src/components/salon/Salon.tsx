@@ -126,8 +126,6 @@ const Salon: React.FC<IProps> = (props) => {
     (salon) => salon.id === Number(salonId),
   );
 
-  console.log('DEBUG: ', props);
-
   return (
     <>
       {salonToDisplay && (

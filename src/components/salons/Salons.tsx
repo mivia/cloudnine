@@ -123,7 +123,7 @@ const SEE_ALL_OPTION = 'SEE_ALL';
 
 export const Salons: React.FC = () => {
   const classes = useStyles();
-  const [priceRange, setPriceRange] = useState<string>(PRICE_RANGES[1].id);
+  const [priceRange, setPriceRange] = useState<string>(SEE_ALL_OPTION);
   const [salons, setSalons] = useState(data.salons);
   const largeScreen = useMediaQuery((theme: Theme) =>
     theme.breakpoints.up('sm'),
@@ -137,12 +137,12 @@ export const Salons: React.FC = () => {
     } = event;
     let filteredSalons = data.salons;
 
+    setPriceRange(value as string);
+
     if (value === SEE_ALL_OPTION) {
       setSalons(data.salons);
       return;
     }
-
-    setPriceRange(value as string);
 
     const chosenPriceRange = PRICE_RANGES.find(
       (priceRange) => priceRange.id === value,
@@ -194,6 +194,9 @@ export const Salons: React.FC = () => {
               </MenuItem>
             ))}
             <MenuItem value={SEE_ALL_OPTION}>See all</MenuItem>
+            {/* <MenuItem value="" disabled>
+              Placeholder
+            </MenuItem> */}
           </Select>
         </FormControl>
       </Grid>
